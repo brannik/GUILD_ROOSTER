@@ -74,17 +74,18 @@ CREATE TABLE IF NOT EXISTS `events` (
   `event_type` int(11) NOT NULL DEFAULT 0,
   `event_leader` int(11) NOT NULL DEFAULT 0,
   `date` datetime NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `begin_at` time DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
 
--- Дъмп данни за таблица guild_rooster.events: ~0 rows (приблизително)
+-- Дъмп данни за таблица guild_rooster.events: ~4 rows (приблизително)
 DELETE FROM `events`;
 /*!40000 ALTER TABLE `events` DISABLE KEYS */;
-INSERT INTO `events` (`id`, `event_type`, `event_leader`, `date`) VALUES
-	(1, 4, 1, '2021-05-30 23:06:03'),
-	(2, 2, 1, '2021-05-21 21:33:28'),
-	(3, 3, 1, '2021-05-16 21:33:33'),
-	(4, 4, 1, '2021-05-27 21:33:38');
+INSERT INTO `events` (`id`, `event_type`, `event_leader`, `date`, `begin_at`) VALUES
+	(1, 4, 1, '2021-05-17 01:14:42', '01:14:41'),
+	(2, 2, 1, '2021-05-27 01:14:43', '01:14:42'),
+	(3, 3, 1, '2021-05-28 01:14:44', '01:14:43'),
+	(4, 1, 1, '2021-05-31 01:14:44', '01:14:44');
 /*!40000 ALTER TABLE `events` ENABLE KEYS */;
 
 -- Дъмп структура за таблица guild_rooster.guild

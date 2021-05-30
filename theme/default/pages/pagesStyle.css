@@ -151,6 +151,7 @@ tr{
 #foother{
     margin-top: 10px;
     height: 40px;
+    text-align: right;
     color: #FFFFFF;
     text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
     background-color: #2b2b2bc5;
@@ -256,47 +257,48 @@ ul {
   }
   .c_cell:hover{
       background-color: rgba(150, 7, 7, 0.616);
+      cursor: pointer;
   }
   .c_cell#event{
       background-color: rgba(255, 5, 5, 0.575);
       color: black;
+      position: relative;
   }
   .c_cell#event_today{
     background-color: rgba(255, 5, 5, 0.575);
     color: black;
-    border: 2px dotted rgb(255, 255, 255);
+    border: 2px dotted rgb(9, 255, 0);
 
 }
   #image_event_icc{
-      width: 30px;
-      height: 30px;
-      vertical-align: bottom;
-      padding-top: 15px;
-      content: url("../media/ICC_EVENT.jpg");
+    width: 50px;
+    height: 50px;
+    content: url("../media/ICC_EVENT.jpg");
   }
   #image_event_rs{
-    width: 30px;
-    height: 30px;
-    vertical-align: bottom;
-    padding-top: 15px;
+    width: 50px;
+    height: 50px;
     content: url("../media/RS_EVENT.jpg");
 }
 #image_event_ulduar{
-    width: 30px;
-    height: 30px;
-    vertical-align: bottom;
-    padding-top: 15px;
+    width: 50px;
+    height: 50px;
     content: url("../media/ULDUAR_EVENT.jpg");
 }
 #image_event_toc{
-    width: 30px;
-    height: 30px;
-    vertical-align: bottom;
-    padding-top: 15px;
+    width: 50px;
+    height: 50px;
     content: url("../media/TOC_EVENT.jpg");
 }
   #event_date{
-      vertical-align: top;
+      position: absolute;
+      margin-top: 5px;
+      margin-left: 5px;
+      font-size: 16px;
+      color: cornsilk;
+  }
+  #event_date:hover{
+      cursor: pointer;
   }
   .event_descr{
       position: absolute;

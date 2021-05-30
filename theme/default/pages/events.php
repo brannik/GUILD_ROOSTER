@@ -11,7 +11,7 @@
     if($resul->num_rows > 0){
         $eventDates = array();
         foreach($resul as $date){
-            $temp = array($date['id'],$date['event_type'],$date['event_leader'],$date['date']);
+            $temp = array($date['id'],$date['event_type'],$date['event_leader'],$date['date'],$date['begin_at']);
             array_push($eventDates,$temp);
             //echo $events[$date['event_type']];
             //print_r ($eventDates);
@@ -47,37 +47,38 @@
                     $dateS = $dateS->format('d');
                     if(strcmp($TMP,$dateS) == 0){
                         $eventIdToSend = $eventDates[$pointer][0];
+                        $time_to_begin = date_format(date_create($eventDates[$pointer][4]),'H:i');
                         switch($eventDates[$pointer][1]){
                             
                             case 1:
                                 if(strcmp($TMP,$todayDate) == 0){
-                                    $calendar = $calendar . "<td class='c_cell' id='event_today'><span id='event_date'>" . $TMP . "</span><img src='' id='image_event_icc' onclick='disply_event_tw(" . $TMP. "," . $eventIdToSend . ")'>";
+                                    $calendar = $calendar . "<td class='c_cell' id='event_today' onclick='disply_event_tw(" . $TMP. "," . $eventIdToSend . ")'><span id='event_date'>" . $TMP . "<br>" . $time_to_begin . "</span><img src='' id='image_event_icc' >";
                                 }else{
-                                    $calendar = $calendar . "<td class='c_cell' id='event'><span id='event_date'>" . $TMP . "</span><img src='' id='image_event_icc' onclick='disply_event_tw(" . $TMP. "," . $eventIdToSend . ")'>";
+                                    $calendar = $calendar . "<td class='c_cell' id='event' onclick='disply_event_tw(" . $TMP. "," . $eventIdToSend . ")'><span id='event_date'>" . $TMP . "<br>" . $time_to_begin . "</span><img src='' id='image_event_icc' >";
                                 }
                                 
                                 break;
                             case 2:
                                 if(strcmp($TMP,$todayDate) == 0){
-                                    $calendar = $calendar . "<td class='c_cell' id='event_today'><span id='event_date'>" . $TMP . "</span><img src='' id='image_event_rs' onclick='disply_event_tw(" . $TMP. "," . $eventIdToSend. ")'>";
+                                    $calendar = $calendar . "<td class='c_cell' id='event_today' onclick='disply_event_tw(" . $TMP. "," . $eventIdToSend. ")'><span id='event_date'>" . $TMP . "<br>" . $time_to_begin . "</span><img src='' id='image_event_rs' >";
                                 }else{
-                                    $calendar = $calendar . "<td class='c_cell' id='event'><span id='event_date'>" . $TMP . "</span><img src='' id='image_event_rs' onclick='disply_event_tw(" . $TMP. "," . $eventIdToSend. ")'>";
+                                    $calendar = $calendar . "<td class='c_cell' id='event' onclick='disply_event_tw(" . $TMP. "," . $eventIdToSend. ")'><span id='event_date'>" . $TMP . "<br>" . $time_to_begin . "</span><img src='' id='image_event_rs'>";
                                 }
                                 
                                 break;
                             case 3:
                                 if(strcmp($TMP,$todayDate) == 0){
-                                    $calendar = $calendar . "<td class='c_cell' id='event_today'><span id='event_date'>" . $TMP . "</span><img src='' id='image_event_toc' onclick='disply_event_tw(" . $TMP. "," . $eventIdToSend . ")'>";
+                                    $calendar = $calendar . "<td class='c_cell' id='event_today' onclick='disply_event_tw(" . $TMP. "," . $eventIdToSend . ")'><span id='event_date'>" . $TMP . "<br>" . $time_to_begin . "</span><img src='' id='image_event_toc' >";
                                 }else{
-                                    $calendar = $calendar . "<td class='c_cell' id='event'><span id='event_date'>" . $TMP . "</span><img src='' id='image_event_toc' onclick='disply_event_tw(" . $TMP. "," . $eventIdToSend . ")'>";
+                                    $calendar = $calendar . "<td class='c_cell' id='event' onclick='disply_event_tw(" . $TMP. "," . $eventIdToSend . ")'><span id='event_date'>" . $TMP . "<br>" . $time_to_begin . "</span><img src='' id='image_event_toc' >";
                                 }
                                 
                                 break;
                             case 4:
                                 if(strcmp($TMP,$todayDate) == 0){
-                                    $calendar = $calendar . "<td class='c_cell' id='event_today'><span id='event_date'>" . $TMP . "</span><img src='' id='image_event_ulduar' onclick='disply_event_tw(" . $TMP. "," . $eventIdToSend . ")'>";
+                                    $calendar = $calendar . "<td class='c_cell' id='event_today' onclick='disply_event_tw(" . $TMP. "," . $eventIdToSend . ")'><span id='event_date'>" . $TMP . "<br>" . $time_to_begin . "</span><img src='' id='image_event_ulduar'>";
                                 }else{
-                                    $calendar = $calendar . "<td class='c_cell' id='event'><span id='event_date'>" . $TMP . "</span><img src='' id='image_event_ulduar' onclick='disply_event_tw(" . $TMP. "," . $eventIdToSend . ")'>";
+                                    $calendar = $calendar . "<td class='c_cell' id='event' onclick='disply_event_tw(" . $TMP. "," . $eventIdToSend . ")'><span id='event_date'>" . $TMP . "<br>" . $time_to_begin . "</span><img src='' id='image_event_ulduar'>";
                                 }
                                 
                                 break;
