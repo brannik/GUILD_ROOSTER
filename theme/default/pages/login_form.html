@@ -1,0 +1,29 @@
+<html>
+    
+<body class="login_body">
+    <h1>Guild Rooster System</h1>
+    <h2>Please login or register</h2>
+    <script src="../theme/loader.js"></script>
+    <div id="container_login">
+
+        <form action="../account/router.php" method="GET">
+        
+            <input type="hidden" name="LOGIN_REQUEST">
+            <table id="login_table">
+                <tr><td><text>Username</text></td></tr>
+                <tr><td><input type="text" name="userName"></td></tr>
+                <tr><td><text>Password</text></td></tr>
+                <tr><td><input type="password" name="userPass"></td></tr>
+                <tr><td><input type="checkbox" name="stayIn"><text>&nbsp;Remember me</text></td></tr>
+                <tr><td><input type="submit" value="Log In"></td></tr>
+            </table>
+        </form>
+        <form action="../account/router.php" method="GET">
+            <input type="hidden" name="REGISTER_REQUEST">
+            <input type="submit" value="Register">
+        </form>
+        
+
+    </div>
+</body>
+</html>

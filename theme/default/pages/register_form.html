@@ -1,0 +1,27 @@
+<html>
+    
+<body class="register_body">
+    <h1>Guild Rooster System</h1>
+    <h2>Register new account</h2>
+    <script src="../theme/loader.js"></script>
+
+    <div id="container_register">
+    
+    <form action="../account/router.php" method="GET">
+        <input type="hidden" name="VALIDATE_REGISTER">
+        <table id="register_table">
+            <tr><td><text>Username</text></td></tr>
+            <tr><td><input type="text" name="ReguserName"></td></tr>
+            <tr><td><text>Password</text></td></tr>
+            <tr><td><input type="password" name="ReguserPass"></td></tr>
+            <tr><td><text>Fraction</text></td></tr>
+            <tr><td><select name="ReguserFraction">
+                <option value="horde">Horde</option>
+                <option value="alliance">Alliance</option>
+            </select></td></tr>
+        <tr><td><input type="submit" value="Register"></td></tr>
+    </table>
+    </form>
+    </div>
+</body>
+</html>

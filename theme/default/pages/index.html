@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="pagesStyle.css">
+        </head>
+<body class="main_body">
+    <div id="main_container">
+        <div id="header">
+            <h1>Guild Rooster System</h1>
+            <?php include ("guild_name.php"); ?>
+        </div>
+        <div id="banner">
+            <text>Banner here</text>
+        </div>
+        <div id="menu">
+            <iframe id="menu_frame" src="<?php $_SERVER["DOCUMENT_ROOT"] ?>/core/menu.php" frameBorder="0" scrolling="no"></iframe>
+        </div>
+        <div id="main_content">
+            <div id="left_navigation">
+                <iframe id="left_frame" src="<?php $_SERVER["DOCUMENT_ROOT"] ?>/core/left_status.php" frameBorder="0" scrolling="no"></iframe>
+            </div>
+            <div id="middle_container">
+                <iframe id="data_frame" name="ifr_middle" src="<?php $_SERVER["DOCUMENT_ROOT"] ?>/core/main.php?page=events" frameBorder="0"></iframe>
+            </div>
+        </div>
+        <div id="foother">
+            <iframe id="footer_frame" src="<?php $_SERVER["DOCUMENT_ROOT"] ?>/core/footer.php" frameBorder="0" scrolling="no"></iframe>
+        </div>
+    </div>
+</body>
+</html>

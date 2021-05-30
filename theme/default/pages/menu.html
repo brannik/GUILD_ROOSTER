@@ -1,0 +1,17 @@
+<html>
+<body>
+    <script src="../theme/loader.js"></script>
+    
+    <div class="main_menu">
+        <div class="menu_logo">
+            <img src="" class="menu_logo_image">
+        </div>
+        <ul>
+            <li><a href="../core/main.php?page=events" target="ifr_middle">Events</a></li>
+            <li><a href="../core/main.php?page=rooster" target="ifr_middle">Rooster</a></li>
+            <li><a href="../core/main.php?page=account" target="ifr_middle">Account</a></li>
+            <?php if($rank > 0){ echo $menuItem;} ?>
+          </ul>
+    </div>
+</body>
+</html>
