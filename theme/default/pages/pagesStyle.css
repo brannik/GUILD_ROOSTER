@@ -235,3 +235,70 @@ ul {
       margin: 10%;
       content: url("../media/logo.png");
   }
+  .events_body{
+      width: 100%;
+      text-align: center;
+      float: left;
+  }
+  .calendar{
+      background-color: #00000063;
+      text-align: center;
+      color: #FFF;
+  }
+  .c_header{
+      height: 20px;
+  }
+  .c_row{
+      height: 50px;
+  }
+  .c_cell{
+      width: 50px;
+  }
+  .c_cell#event{
+      background-color: rgba(255, 5, 5, 0.575);
+      color: black;
+  }
+  .c_cell#event_today{
+    background-color: rgba(255, 5, 5, 0.575);
+    color: black;
+    border: 2px dotted rgb(255, 255, 255);
+
+}
+  #image_event_icc{
+      width: 30px;
+      height: 30px;
+      vertical-align: bottom;
+      padding-top: 15px;
+      content: url("../media/ICC_EVENT.jpg");
+  }
+  #image_event_rs{
+    width: 30px;
+    height: 30px;
+    vertical-align: bottom;
+    padding-top: 15px;
+    content: url("../media/RS_EVENT.jpg");
+}
+#image_event_ulduar{
+    width: 30px;
+    height: 30px;
+    vertical-align: bottom;
+    padding-top: 15px;
+    content: url("../media/ULDUAR_EVENT.jpg");
+}
+#image_event_toc{
+    width: 30px;
+    height: 30px;
+    vertical-align: bottom;
+    padding-top: 15px;
+    content: url("../media/TOC_EVENT.jpg");
+}
+  #event_date{
+      vertical-align: top;
+  }
+  .event_descr{
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.514);
+      width: 270px;
+      height: 335px;
+      right: 10px;
+  }

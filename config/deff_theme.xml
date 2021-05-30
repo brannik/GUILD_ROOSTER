@@ -7,10 +7,10 @@
     <index_page>index.php</index_page>
     <left_status>left_status.html</left_status>
     <menu>menu.html</menu>
-    <events_page>events.html</events_page>
-    <account_page>account.html</account_page>
-    <rooster_page>rooster.html</rooster_page>
-    <footer_page>footer.html</footer_page>
-    <acp_page>admin.html</acp_page>
+    <events_page>events.php</events_page>
+    <account_page>account.php</account_page>
+    <rooster_page>rooster.php</rooster_page>
+    <footer_page>footer.php</footer_page>
+    <acp_page>admin.php</acp_page>
     <register_page>register_form.html</register_page>
 </theme>
