@@ -254,6 +254,9 @@ ul {
   .c_cell{
       width: 50px;
   }
+  .c_cell:hover{
+      background-color: rgba(150, 7, 7, 0.616);
+  }
   .c_cell#event{
       background-color: rgba(255, 5, 5, 0.575);
       color: black;
