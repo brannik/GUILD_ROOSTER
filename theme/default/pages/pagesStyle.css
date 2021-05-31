@@ -12,6 +12,21 @@
       
       color: rgb(58, 58, 50);
 }
+
+.register_body_from_json{
+    background-image: url("../media/background.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 700px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+      max-width: 900px;
+      text-align: center;
+      background-attachment: fixed;
+      margin: auto;
+      
+      color: rgb(58, 58, 50);
+}
 .login_body{
     background-image: url("../media/background.jpg"); /* The image used */
     background-color: #cccccc; /* Used if the image is unavailable */
@@ -96,11 +111,48 @@ tr{
     box-shadow: 10px 10px 33px 0px rgba(0,13,255,0.57);
 }
 
+#container_register_from_json{
+    margin-top: 100px;
+    text-align: center;
+    width: auto;
+    height: 300px;
+    display: block;
+    padding: 20px;
+    padding-top: 40px;
+    margin-bottom: 40px;
+    background-color: #2b2b2b;
+    color:rgb(9, 255, 0);
+    border-radius: 22px 22px 22px 22px;
+    -moz-border-radius: 22px 22px 22px 22px;
+    -webkit-border-radius: 22px 22px 22px 22px;
+    border: 2px solid #000000;
+
+    -webkit-box-shadow: 10px 10px 33px 0px rgba(0,13,255,0.57);
+    -moz-box-shadow: 10px 10px 33px 0px rgba(0,13,255,0.57);
+    box-shadow: 10px 10px 33px 0px rgba(0,13,255,0.57);
+}
+
 #register_table{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
+#register_table_json{
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-align: center;
+}
+
+#register_json_final{
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-align: center;
+    width: 80%;
+}
+
+
 
 #main_container{
     color: #FFFFFF;
@@ -151,6 +203,7 @@ tr{
 #foother{
     margin-top: 10px;
     height: 40px;
+    text-align: right;
     color: #FFFFFF;
     text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
     background-color: #2b2b2bc5;
@@ -254,46 +307,50 @@ ul {
   .c_cell{
       width: 50px;
   }
+  .c_cell:hover{
+      background-color: rgba(150, 7, 7, 0.616);
+      cursor: pointer;
+  }
   .c_cell#event{
       background-color: rgba(255, 5, 5, 0.575);
       color: black;
+      position: relative;
   }
   .c_cell#event_today{
     background-color: rgba(255, 5, 5, 0.575);
     color: black;
-    border: 2px dotted rgb(255, 255, 255);
+    border: 2px dotted rgb(9, 255, 0);
 
 }
   #image_event_icc{
-      width: 30px;
-      height: 30px;
-      vertical-align: bottom;
-      padding-top: 15px;
-      content: url("../media/ICC_EVENT.jpg");
+    width: 50px;
+    height: 50px;
+    content: url("../media/ICC_EVENT.jpg");
   }
   #image_event_rs{
-    width: 30px;
-    height: 30px;
-    vertical-align: bottom;
-    padding-top: 15px;
+    width: 50px;
+    height: 50px;
     content: url("../media/RS_EVENT.jpg");
 }
 #image_event_ulduar{
-    width: 30px;
-    height: 30px;
-    vertical-align: bottom;
-    padding-top: 15px;
+    width: 50px;
+    height: 50px;
     content: url("../media/ULDUAR_EVENT.jpg");
 }
 #image_event_toc{
-    width: 30px;
-    height: 30px;
-    vertical-align: bottom;
-    padding-top: 15px;
+    width: 50px;
+    height: 50px;
     content: url("../media/TOC_EVENT.jpg");
 }
   #event_date{
-      vertical-align: top;
+      position: absolute;
+      margin-top: 5px;
+      margin-left: 5px;
+      font-size: 16px;
+      color: cornsilk;
+  }
+  #event_date:hover{
+      cursor: pointer;
   }
   .event_descr{
       position: absolute;
@@ -301,4 +358,238 @@ ul {
       width: 270px;
       height: 335px;
       right: 10px;
+  }
+
+  #char_name{
+      color: rgb(51, 255, 0);
+  }
+
+  #banner_horde{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/horde.png");
+  }
+  #banner_ally{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/ally.png");
+  }
+
+  /* races male/female */
+  #human_m{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/race/1-0.gif");
+  }
+  #human_f{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/race/1-1.gif");
+  }
+  #orc_m{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/race/2-0.gif");
+  }
+  #orc_f{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/race/2-1.gif");
+  }
+  #dwarf_m{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/race/3-0.gif");
+  }
+  #dwarf_f{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/race/3-1.gif");
+  }
+  #n_elf_m{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/race/4-0.gif");
+  }
+  #n_elf_f{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/race/4-1.gif");
+  }
+  #undeath_m{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/race/5-0.gif");
+  }
+  #undeath_f{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/race/5-1.gif");
+  }
+  #tauren_m{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/race/6-0.gif");
+  }
+  #tauren_f{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/race/6-1.gif");
+  }
+  #gnome_m{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/race/7-0.gif");
+  }
+  #gnime_f{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/race/7-1.gif");
+  }
+  #troll_m{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/race/8-0.gif");
+  }
+  #troll_f{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/race/8-1.gif");
+  }
+
+  #b_elf_m{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/race/10-0.gif");
+  }
+  #b_elf_f{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/race/10-1.gif");
+  }
+  #draenei_m{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/race/11-0.gif");
+  }
+  #draenei_f{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/race/11-1.gif");
+  }
+  
+  /* classes */
+  #paladin{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/class/2.gif");
+  }
+  #warrior{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/class/1.gif");
+  }
+  #hunter{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/class/3.gif");
+  }
+  #rogue{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/class/4.gif");
+  }
+  #priest{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/class/5.gif");
+  }
+  #dk{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/class/6.gif");
+  }
+  #shaman{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/class/7.gif");
+  }
+  #mage{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/class/8.gif");
+  }
+  #warlock{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/class/9.gif");
+  }
+  #druid{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/class/11.gif");
+  }
+
+  /* proffesions*/
+  #prof_bs{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/proffession/164.gif");
+  }
+  #prof_lw{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/proffession/165.gif");
+  }
+  #prof_alch{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/proffession/171.gif");
+  }
+  #prof_herb{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/proffession/182.gif");
+  }
+  #prof_mining{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/proffession/186.gif");
+  }
+  #prof_tailor{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/proffession/197.gif");
+  }
+  #prof_engin{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/proffession/202.gif");
+  }
+  #prof_enchant{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/proffession/333.gif");
+  }
+  #prof_skin{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/proffession/393.gif");
+  }
+  #prof_jewel{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/proffession/755.gif");
+  }
+  #prof_inscr{
+    width: 20px;
+    height: 20px;
+    content: url("../media/icons/proffession/773.gif");
+  }
+
+  #OK{
+      color: greenyellow;
+  }
+  #ERR{
+      color: red;
   }

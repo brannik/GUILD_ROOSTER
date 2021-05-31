@@ -18,5 +18,5 @@
             $count = $row['members_count'];
         }
     }
-    print "<h2>( " . $name . " [". $count ."] )</h2>";
+    print "<h2 id='guild_name_text'> < " . $name . " > (". $count ." members) </h2>";
 ?>

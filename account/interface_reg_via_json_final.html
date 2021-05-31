@@ -1,0 +1,18 @@
+<html>
+    
+<body class="register_body_from_json">
+    <h1>Guild Rooster System</h1>
+    <h2>Register new account with file - Step 2</h2>
+    <script src="../theme/loader.js"></script>
+    <div id="container_register_from_json">
+        <table id="register_json_final">
+            <th><td colspan="10">Progress...</td></th>
+            <?php print $progress_table ?>
+        </table>
+        <form action="reg_via_json.php" id="reg_file_final" method="POST">
+            <input type="hidden" name="GO_TO_LOGGIN_PAGE">
+            <input type="submit" name="reg_button" id="reg_button" value="Go Logg In">
+        </form>
+    </div>
+</body>
+</html>

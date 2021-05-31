@@ -41,7 +41,8 @@
         // validate data then do log in
         if($userFound){
             //echo $_GET['userName'] . " -> " . $_GET['userPass'];
-            include(INDEX_PAGE);
+            //include(INDEX_PAGE);
+            header('Location: /');
             //include($xml->path . "" . $xml->index_page);
         }else{
             //include($xml->path . "" . $xml->login_page);

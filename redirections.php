@@ -5,7 +5,7 @@
     define("REGISTER_PAGE",$xml->path . "" . $xml->register_page);
     define("LEFT_STATUS",$xml->path . "" . $xml->left_status);
     define("MENU",$xml->path . "" . $xml->menu);
-    define("INDEX_PAGE",$xml->path . "" . $xml->index_page);
+    define("INDEX_PAGE",ROOT_FOLDER . $xml->path . "" . $xml->index_page);
     define("EVENTS_PAGE",$xml->path . "" . $xml->events_page);
     define("ACCOUNT_PAGE",$xml->path . "" . $xml->account_page);
     define("ROOSTER_PAGE",$xml->path . "" . $xml->rooster_page);
