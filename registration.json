@@ -1,0 +1,45 @@
+{
+    "Characters": {
+        "Agset":{
+            "name":"Agset",
+            "race_index": "b_elf_m",
+            "class_index": "paladin",
+            "is_main": 1,
+            "fraction": 1,
+            "alt_of": "none",
+            "g_rank": 2,
+            "level": 80,
+            "notes": "MS: 6.9 ret / OS: 6.5 holy"
+        },
+        "Agsset":{
+            "name":"Agsset",
+            "race_index": "tauren_m",
+            "class_index": "druid",
+            "is_main": 0,
+            "fraction": 1,
+            "alt_of": "Agset",
+            "g_rank": 1,
+            "level": 80,
+            "notes": "MS: 6.3 resto / OS: 6.3 cat"
+        },
+        "Agsseet":{
+            "name":"Agsseet",
+            "race_index": "n_elf_m",
+            "class_index": "druid",
+            "is_main": 0,
+            "fraction": 2,
+            "alt_of": "Agset",
+            "g_rank": 1,
+            "level": 80,
+            "notes": "MS: 6.3 resto / OS: 6.3 cat"
+        }
+    },
+    "DKP":{
+        "total": 23000,
+        "net": 230,
+        "hours": 66,
+        "g_rank": 3,
+        "g_name": "Server Staff"
+    }
+    
+}

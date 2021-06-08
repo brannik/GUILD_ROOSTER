@@ -1,12 +1,19 @@
 <html>
+    <head>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    </head>
+    
 <body>
     <script src="../theme/loader.js"></script>
+    <script src="event_description.js"></script>
     <h1>Events page</h1>
     <div class="events_body">
         <?php print $calendar; ?>
     </div>
     <div class="event_descr">
-        <span class="description"><text>This is test description</text></span>
+        <iframe src="" id="descr" frameBorder="0" scrolling="no"></iframe>
+        
     </div>
+    
 </body>
 </html>

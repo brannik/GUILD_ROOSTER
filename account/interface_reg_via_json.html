@@ -1,0 +1,31 @@
+<html>
+    
+<body class="register_body_from_json">
+    <h1>Guild Rooster System</h1>
+    <h2>Register new account with file - Step 1</h2>
+    <script src="../theme/loader.js"></script>
+    <div id="container_register_from_json">
+        <table id="register_table_json">
+            <tr><td>
+                <form action="reg_via_json.php" id="upload_form" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="file" id="file">
+                    <input type="submit" name="submit" value="Upload">
+                </form>
+            </td></tr>
+            <tr><td>Your account name will be : [<?php print $acc_name ?>]</td></tr><br>
+            <tr><td>Enter your new password:</td></tr>
+            <tr><td>
+                <form action="reg_via_json.php" id="reg_file_final" method="POST">
+                    <input type="hidden" name="REGISTER_FINAL">
+                    <input type="hidden" name="file_location" value="<?php print $transfer ?>">
+                    <input type="hidden" name="usern_name_forReg" value="<?php print $acc_name ?>">
+                    <input type="hidden" name="fraction_forReg" value="<?php print $acc_fraction ?>">
+                    <input type="hidden" name="rank_in_guild" value="<?php print $acc_g_rank ?>">
+                    <input type="password" name="pswd_text" id="pswd_text"><br><br>
+                    <input type="submit" name="reg_button" id="reg_button" value="Register">
+                </form>
+            </td></tr>
+        </table>
+    </div>
+</body>
+</html>
